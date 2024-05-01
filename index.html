@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/temaDark.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Seu Site</title>
+</head>
+<body>
+    <header>
+        <address><i class="fa-solid fa-envelope icones"></i> <a href="mailto:webmaster@example.com">seusite@gmail.com.br</a></address>
+        <a href="tel:+"><i class="fa-solid fa-phone-volume icones"></i> +55 11 99999-9999</a>
+    </header>
+    <nav id="itens">
+        <img src="img/logo.webp" alt="Hotel ok">  
+        <!-- Ícone do menu para dispositivos móveis -->
+        <div class="menu-mobile-icon">
+            <i id="burguer" class="fas fa-bars" onclick="clickMenu()"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="http://" class="navbar" style="color: #FF6E4B;">Home</a>
+            </li>
+            <li>
+                <a href="#sobre" class="navbar">Sobre</a>
+            </li>
+            <li>
+                <a href="#servicos" class="navbar">Serviços</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="navbar">Portfólio</a>
+            </li>
+            <li>
+                <a href="#contato" class="navbar">Contato</a>
+            </li>
+            <!-- <li>
+                <button id="alterarThema" onclick="alterarTemaSite()">Alterar Cor de Tema</button>
+            </li> -->
+            <li>
+                <i class="fa-solid fa-sun"></i>
+                <input id="toggle-theme" type="range" min="0" max="1" step="1" value="0">
+                <i class="fa-solid fa-moon"></i>
+            </li>
+        </ul>
+    </nav>
+    <!-- banner -->
+    <section class="banner">
+        <h1>Conheça este paraíso chamado Balneário Camboriú</h1>
+        <h2>"Nossa dubai Brasileira"</h2>
+        <a href="http://" class="btn-saiba-mais">Venha conhecer!</a>
+    </section>
+    <main>
+        <!-- sobre -->
+        <section class="conheca-o-hotel" id="sobre">
+            <h3>Balneário Camboriú é uma cidade turística no estado de Santa Catarina, no sul do Brasil.</h3>
+            <p>É conhecida pelos grandes edifícios e por praias como a Praia Central. 
+                Bares, restaurantes e lojas preenchem a Avenida Atlântica, uma avenida movimentada junto à praia.
+                O Parque Unipraias fica na foz do Rio Camboriú e oferece vistas a partir das tirolesas e dos teleféricos.
+            </p>
+            <hr>
+            <ul class="grid-img">
+                <li class="small" style="background-image: url('img/Hildo-Junior-FG-Big-Wheel-1.webp');"></li>
+                <li class="large" style="background-image: url('img/capa-site-beto-carrero.webp');"></li>
+                <li class="large" style="background-image: url('img/deck-norte-5-credito-alfabile-scaled.webp');"></li>
+                <li class="small" style="background-image: url('img/trenzinho-unipraias.jpg');"></li>
+            </ul>
+        </section>
+        <!-- Serviços -->
+        <section class="section-vantagens" id="servicos">
+            <h4>Balneário Camboriú a "Dubai Brasileira"</h4>
+            <p>Balneário Camboriú foi classificada como "a capital da música eletrônica" no país.
+                A cidade também é conhecida pelo apelido de "Dubai Brasileira", devido ao alto número de arranha-céus e turistas.
+                A cidade é servida pelo Aeroporto Internacional Ministro Victor Konder, localizado no município adjacente de Navegantes.
+            </p>
+            <hr>
+            <div class="service">
+                <div class="card">
+                    <i></i>
+                    <p class="title-service">Serviço 1</p>
+                    <p class="text-service">Balneário Camboriú foi classificada como "a capital da música eletrônica" no país.
+                        A cidade também é conhecida pelo apelido de "Dubai Brasileira", devido ao alto número de arranha-céus e turistas.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Fale Conosco  <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="card">
+                    <i></i>
+                    <p class="title-service">Serviço 2</p>
+                    <p class="text-service">Balneário Camboriú foi classificada como "a capital da música eletrônica" no país.
+                        A cidade também é conhecida pelo apelido de "Dubai Brasileira", devido ao alto número de arranha-céus e turistas.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Fale Conosco   <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="card">
+                    <i></i>
+                    <p class="title-service">Serviço 3</p>
+                    <p class="text-service">Balneário Camboriú foi classificada como "a capital da música eletrônica" no país.
+                        A cidade também é conhecida pelo apelido de "Dubai Brasileira", devido ao alto número de arranha-céus e turistas.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Fale Conosco   <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="card">
+                    <i></i>
+                    <p class="title-service">Serviço 4</p>
+                    <p class="text-service">Balneário Camboriú foi classificada como "a capital da música eletrônica" no país.
+                        A cidade também é conhecida pelo apelido de "Dubai Brasileira", devido ao alto número de arranha-céus e turistas.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Fale Conosco  <i class="fa-brands fa-whatsapp"></i></a>
+                <br>
+                </div>
+            </div>
+            <ul class="grid-img">
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h5>Localização</h5>
+                    <p>Balneário Camboriú a "Dubai Brasileira"</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h5>Pacotes e Ofertas</h5>
+                    <p>Balneário Camboriú a "Dubai Brasileira"</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    <h5>Acomadações</h5>
+                    <p>Balneário Camboriú a "Dubai Brasileira"</p>
+                </li>
+            </ul>
+        </section>
+        <!-- Portfólio -->
+        <section class="conheca-o-hotel" id="portfolio">
+            <h3>Conheça o estado de Santa Catarina, no sul do Brasil.</h3>
+            <p>Beto Carrero World, Deck, FG Big Wheel, Youhoo - Parque Unipraias Camboriú</p>
+            <hr>
+            <ul class="grid-img">
+                <li class="small" style="background-image: url('img/Hildo-Junior-FG-Big-Wheel-1.webp');"></li>
+                <li class="large" style="background-image: url('img/capa-site-beto-carrero.webp');"></li>
+                <li class="large" style="background-image: url('img/deck-norte-5-credito-alfabile-scaled.webp');"></li>
+                <li class="small" style="background-image: url('img/trenzinho-unipraias.jpg');"></li>
+            </ul>
+        </section>
+        <!-- newslatter -->
+        <section class="newsletter" id="contato">
+            <h6>Fale Conosco atráves do WhatsApp</h6>
+            <p>Entre em Contato</p>
+            <hr>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Nosso time está online <i class="fa-brands fa-whatsapp"></i></a>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer" title="Facebook sua empresa">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+            </li>
+            <li> 
+                <a href="http://" target="_blank" rel="noopener noreferrer" title="Instagram sua empresa">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </li>
+            <li> 
+                <a href="http://" target="_blank" rel="noopener noreferrer" title="WhatsApp sua empresa">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+        <p>Todos os direitos reservados a SuaEmpresa 2024</p>
+        </a>
+        <a href="" target="_blank" rel="noopener noreferrer">
+            Desenvolvido por GrupoInovaTech 2024 <span style="font-size: 100%;">&#9749</span> Feito com Amor <span style="font-size: 100%;">&#128155</span>
+        </a>
+    </footer>
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/menuMobile.js"></script>
+</body>
+</html>

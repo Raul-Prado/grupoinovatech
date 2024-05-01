@@ -1,0 +1,368 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --black:#000;
+    --white:#fff;
+    --darkblue:#1D2937;
+    --orange:#FF6E4B;
+    --green:green;
+}
+/* header */
+header{
+    background-color: var(--darkblue);
+    width: 100%;
+    height: 4rem;
+    color: var(--white);
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+address{
+    color: var(--white);
+}
+header address a i, .icones{
+    text-align: center;
+    color: var(--orange);
+}
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 4%;
+}
+nav img{
+    width: 15%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-right: 4rem;
+}
+nav ul li:last-child{
+    margin-right: 0;
+}
+nav a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    color: var(--darkblue);
+}
+nav a.navbar:hover{
+    opacity: 1;
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 15%;
+    padding: 10px 10px;
+}
+/* menu mobile */
+i#burguer{
+    background-color: var(--orange);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+i#burguer:hover{
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+@media (min-width: 740px){
+    i#burguer{
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end; /* Alinhar os itens do menu à direita */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 2rem; /* Alterado de margin-right para margin-left */
+    }
+    /* nav ul li {
+        margin-right: 2rem;
+    } */
+}
+@media (max-width: 740px){
+    nav ul {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--orange);
+        position: relative; /* Adicionado para garantir que o menu ocupe a tela inteira */
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex; /* Exibir o menu quando a classe .active for adicionada */
+        flex-direction: column;
+    }
+}
+/* banner */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/balneario-camburiu-dubai-brasileira.avif);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: var(--white);
+    text-align: center;
+}
+.banner h1{
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+.banner h2{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+.banner .btn-saiba-mais{
+    background: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-transform: uppercase;
+}
+@media (max-width: 700px){
+    .banner h1{font-size: 2rem;}
+    .banner h2{font-size: 1.5rem;}
+    .banner .btn-saiba-mais{font-size: 1rem; padding: 10px 15px;}
+}
+/* conheça o hotel */
+section.conheca-o-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    text-align: center;
+}
+section.conheca-o-hotel h3{
+    font-size: 3rem;
+    margin-bottom: 35px;
+    color: var(--darkblue);
+    line-height: 100%;
+}
+section.conheca-o-hotel p{
+    max-width: 800px;
+    margin-bottom: 25px;
+    color: var(--orange);
+}
+section.conheca-o-hotel hr{
+    width: 200px;
+    height: 2px;
+    margin-bottom: 70px;
+    background-color: var(--orange);
+    border: none;
+}
+section.conheca-o-hotel ul.grid-img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+}
+section.conheca-o-hotel ul.grid-img li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+} 
+section.conheca-o-hotel ul.grid-img li.small{
+    flex-basis: 40%;
+}
+section.conheca-o-hotel ul.grid-img li.large{
+    flex-basis: 60%;
+}
+@media (max-width: 700px){
+    section.conheca-o-hotel ul.grid-img li.small,section.conheca-o-hotel ul.grid-img li.large{
+        flex-basis: 100%;
+    }
+}
+/* service */
+section.section-vantagens{
+    background: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+    text-align: center;
+}
+section.section-vantagens h4{
+    font-size: 3rem;
+    margin-bottom: 35px;
+    color: var(--white);
+    line-height: 100%;
+}
+section.section-vantagens p{
+    max-width: 800px;
+    margin-bottom: 25px;
+    color: var(--orange);
+}
+section.section-vantagens hr{
+    width: 200px;
+    height: 2px;
+    margin-bottom: 70px;
+    background-color: var(--orange);
+    border: none;
+}
+section.section-vantagens div.service{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+section.section-vantagens div.service div.card{
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+div.service div.card p.title-service{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+} 
+div.service div.card p.text-service{
+    color: var(--white);
+    font-size: 1rem;
+    text-align:center;
+}
+div.service div.card a{
+    padding: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+section.section-vantagens ul.grid-img{
+    width: 100%;
+    display: flex;
+}
+section.section-vantagens ul.grid-img li{
+    padding: 0 30px;
+    text-align: center;
+    list-style: none;
+}
+section.section-vantagens ul.grid-img li i{
+    color: var(--orange);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+section.section-vantagens ul.grid-img li h5{
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+section.section-vantagens ul.grid-img li p{
+    color: var(--white);
+}
+@media (max-width: 700px){
+    section.section-vantagens .grid-img{
+        flex-direction: column;
+    }
+    section.section-vantagens div.service{
+       flex-direction: column;
+    }
+}
+/* Newlatter */
+section.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+section.newsletter h6{
+    font-size: 3rem;
+    margin-bottom: 35px;
+    color: var(--darkblue);
+    line-height: 100%;
+    text-align: center;
+}
+section.newsletter p{
+    max-width: 800px;
+    margin-bottom: 25px;
+    color: var(--orange);
+    font-size: 2rem;
+}
+section.newsletter hr{
+    width: 200px;
+    height: 2px;
+    margin-bottom: 50px;
+    background-color: var(--orange);
+    border: none;
+}
+section.newsletter a{
+    padding: 15px;
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px 0px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+@media (max-width: 700px){
+    section.section-vantagens .grid-img{
+        flex-direction: column;
+    }
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    padding: 50px 0px;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    margin-bottom: 25px;
+    list-style: none;
+}
+footer ul li{
+    margin-right: 10px;
+}
+footer ul li:last-child{
+    margin-right: 0;
+}
+footer ul li a{
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+}
+footer p{
+    color: var(--white);
+    text-align: center;
+}
