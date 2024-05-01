@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    font-display: swap;
 }
 :root{
     --black:#000;
@@ -12,6 +13,9 @@
     --orange:#FF6E4B;
     --green:green;
 }
+html {
+    scroll-behavior: smooth;
+  }
 /* header */
 header{
     background-color: var(--darkblue);
@@ -101,6 +105,19 @@ i#burguer:hover{
     } */
 }
 @media (max-width: 740px){
+    header{
+        display:flex;
+        flex-wrap: wrap;
+        height: 6rem;
+        align-items: center;
+    }
+    nav a{
+        font-size: 1rem;
+        margin-bottom: 10rem;
+    }
+    nav ul li{
+        margin-right: 0rem;
+    }
     nav ul {
         display: none;
         justify-content: center;
@@ -112,7 +129,6 @@ i#burguer:hover{
         width: 100%;
         text-align: center;
     }
-
     nav ul.active {
         display: flex; /* Exibir o menu quando a classe .active for adicionada */
         flex-direction: column;
@@ -144,13 +160,13 @@ i#burguer:hover{
     color: var(--white);
     text-decoration: none;
     font-size: 1.2rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border-radius: 10px;
     padding: 20px 30px;
     text-transform: uppercase;
 }
 @media (max-width: 700px){
-    .banner h1{font-size: 2rem;}
+    .banner h1{font-size: 2rem; padding: 10px;}
     .banner h2{font-size: 1.5rem;}
     .banner .btn-saiba-mais{font-size: 1rem; padding: 10px 15px;}
 }
@@ -159,7 +175,7 @@ section.conheca-o-hotel{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 50px;
+    padding: 100px 20px;
     text-align: center;
 }
 section.conheca-o-hotel h3{
@@ -169,6 +185,7 @@ section.conheca-o-hotel h3{
     line-height: 100%;
 }
 section.conheca-o-hotel p{
+    font-size: 1.1rem;
     max-width: 800px;
     margin-bottom: 25px;
     color: var(--orange);
@@ -201,6 +218,10 @@ section.conheca-o-hotel ul.grid-img li.large{
     flex-basis: 60%;
 }
 @media (max-width: 700px){
+    section.conheca-o-hotel h3{
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+    }
     section.conheca-o-hotel ul.grid-img li.small,section.conheca-o-hotel ul.grid-img li.large{
         flex-basis: 100%;
     }
@@ -211,7 +232,7 @@ section.section-vantagens{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 80px;
+    padding: 100px 35px;
     text-align: center;
 }
 section.section-vantagens h4{
@@ -221,6 +242,7 @@ section.section-vantagens h4{
     line-height: 100%;
 }
 section.section-vantagens p{
+    font-size: 1.1rem;
     max-width: 800px;
     margin-bottom: 25px;
     color: var(--orange);
@@ -247,6 +269,7 @@ section.section-vantagens div.service div.card{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 div.service div.card p.title-service{
+    font-size: 1.1rem;
     color: var(--white);
     font-size: 1.5rem;
     font-weight: bold;
@@ -267,8 +290,8 @@ div.service div.card a{
     font-size: 1rem;
 }
 section.section-vantagens ul.grid-img{
-    width: 100%;
     display: flex;
+    align-items: center;
 }
 section.section-vantagens ul.grid-img li{
     padding: 0 30px;
@@ -289,6 +312,10 @@ section.section-vantagens ul.grid-img li p{
     color: var(--white);
 }
 @media (max-width: 700px){
+    section.section-vantagens h4{
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+    }
     section.section-vantagens .grid-img{
         flex-direction: column;
     }
@@ -301,10 +328,11 @@ section.newsletter{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 100px 50px;
 }
-section.newsletter h6{
-    font-size: 3rem;
+section.newsletter h4{
+    font-size: 2.5rem;
     margin-bottom: 35px;
     color: var(--darkblue);
     line-height: 100%;
@@ -315,6 +343,7 @@ section.newsletter p{
     margin-bottom: 25px;
     color: var(--orange);
     font-size: 2rem;
+    text-wrap: wrap;
 }
 section.newsletter hr{
     width: 200px;
@@ -343,7 +372,7 @@ footer{
     display: flex;
     flex-direction: column;
     background: var(--black);
-    padding: 50px 0px;
+    padding: 20px 20px;
     align-items: center;
 }
 footer ul{
