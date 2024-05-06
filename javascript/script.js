@@ -20,4 +20,4 @@ const toggleTheme = document.getElementById('toggle-theme');
       // Se o valor for 1, define o tema para claro
       document.body.classList.remove('tema-dark');
     }
-  });
+});

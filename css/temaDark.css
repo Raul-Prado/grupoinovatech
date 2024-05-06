@@ -1,12 +1,34 @@
 :root{
     --black:#000;
     --white:#fff;
+    --cinza:#ccc;
     --darkblue:#1D2937;
     --orange:#FF6E4B;
 }
 .tema-dark{
-    background-color: var(--darkblue);
-    color: #ccc;
+    background-color: #1D2937;
+    color:#ccc !important;
+}
+.tema-dark nav#itens ul li a.navbar{
+    color: var(--cinza);
+} 
+.tema-dark section.banner h1,h2,a{
+    color: var(--cinza);
+} 
+.tema-dark section.conheca-o-hotel h3{
+    color: var(--cinza);
+}
+.tema-dark section.section-vantagens h4{
+    color: var(--cinza);
+} 
+.tema-dark div.service div.card p{
+    color: var(--cinza);
+}
+.tema-dark section.section-vantagens ul.grid-img li h5, p{
+    color: var(--cinza);
+}
+.tema-dark section.newsletter h4{
+    color: var(--cinza);
 }
 /* //trocar thems */
 #toggle-theme {
